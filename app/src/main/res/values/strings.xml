@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">gameBlackjack</string>
+    <string name="blackjackTextView">BLACKJACK</string>
+    <string name="dealersFirstCardImageView">dealersFirstCardImageView</string>
+    <string name="dealersSecondCardImageView">dealersSecondCardImageView</string>
+    <string name="dealersThirdCardImageView">dealersThirdCardImageView</string>
+    <string name="dealersForthCardImageView">dealersForthCardImageView</string>
+    <string name="dealersFifthCardImageView">dealersFirstCardImageView</string>
+    <string name="dealersTitle">Dealers Score: </string>
+    <string name="dealersActualScore">0</string>
+    <string name="playersTitle">Players Score:</string>
+    <string name="playersScore">0</string>
+    <string name="hitButton">HIT</string>
+    <string name="standButton">STAND</string>
+    <string name="dealButton">DEAL</string>
+    <string name="resetButton">New Game</string>
+    <string name="BustedBlackJackTextView">BUSTED!</string>
+    <string name="charlieTitle">CHARLIE</string>
+    <string name="blackJackTitle">BLACKJACK</string>
+</resources>

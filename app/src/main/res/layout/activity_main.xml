@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35d429"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.trenthamilton.blackjack.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/dealersScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dealerTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dealersTitle"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/dealersScoreTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dealersActualScore"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dealersCards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/dealersFirstCardImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/cardsMargin"
+                    android:contentDescription="@string/dealersFirstCardImageView"
+                    android:src="@drawable/cardback" />
+
+                <ImageView
+                    android:id="@+id/dealersSecondCardImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/cardsMargin"
+                    android:contentDescription="@string/dealersSecondCardImageView"
+                    android:src="@drawable/cardback" />
+
+                <ImageView
+                    android:id="@+id/dealersThirdCardImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/cardsMargin"
+                    android:contentDescription="@string/dealersThirdCardImageView"
+                    android:src="@drawable/cardback" />
+
+                <ImageView
+                    android:id="@+id/dealersForthCardImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/cardsMargin"
+                    android:contentDescription="@string/dealersForthCardImageView"
+                    android:src="@drawable/cardback" />
+
+                <ImageView
+                    android:id="@+id/dealersFifthCardImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/dealersFifthCardImageView"
+                    android:src="@drawable/cardback" />
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/space"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/blackjack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blackjackTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:text="@string/blackjackTextView"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="55sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/space" />
+
+            <LinearLayout
+                android:id="@+id/playerScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/playersTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playersTitle"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/playersScoreTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playersScore"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/playersCards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/userFirstCardImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/cardsMargin"
+                    android:contentDescription="@string/dealersFirstCardImageView"
+                    android:src="@drawable/cardback" />
+
+                <ImageView
+                    android:id="@+id/userSecondCardImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/cardsMargin"
+                    android:contentDescription="@string/dealersSecondCardImageView"
+                    android:src="@drawable/cardback" />
+
+                <ImageView
+                    android:id="@+id/userThirdCardImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/cardsMargin"
+                    android:contentDescription="@string/dealersThirdCardImageView"
+                    android:src="@drawable/cardback" />
+
+                <ImageView
+                    android:id="@+id/userForthCardImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/cardsMargin"
+                    android:contentDescription="@string/dealersForthCardImageView"
+                    android:src="@drawable/cardback" />
+
+                <ImageView
+                    android:id="@+id/userFifthCardImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/dealersFifthCardImageView"
+                    android:src="@drawable/cardback" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space" />
+
+
+            <LinearLayout
+
+                android:id="@+id/buttonsLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/hitButton"
+                    android:layout_width="@dimen/buttonWidth"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hitButton" />
+
+                <Button
+                    android:id="@+id/standButton"
+                    android:layout_width="@dimen/buttonWidth"
+                    android:layout_height="wrap_content"
+                    android:text="@string/standButton" />
+
+                <Button
+                    android:id="@+id/dealButton"
+                    android:layout_width="@dimen/buttonWidth"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dealButton" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
